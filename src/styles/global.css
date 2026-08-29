@@ -154,6 +154,15 @@
     cursor: pointer;
   }
 
+  /* ボタン系の要素はラベルを文字選択不可にする */
+  button,
+  [role="button"],
+  [role="menuitem"],
+  [role="menuitemradio"],
+  [role="menuitemcheckbox"] {
+    user-select: none;
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
